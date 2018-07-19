@@ -6,7 +6,7 @@ Workshop : découverte de GSAP (Green Socket Animation Platform)
 
 ***
 
-1: Gsap c'est 4 librairies, et des plugins (pas tous gratuits :-(  )
+1: Gsap c'est 4 librairies, et des plugins (pas tous gratuits :-( ... )
 -----------------
 
 1. TweenLite
