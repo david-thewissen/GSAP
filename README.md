@@ -263,10 +263,11 @@ Décommentez les buttons et ajouter ceci à la tl :
 
  Second-last: Exemples et links
  ============
- - Mes anims de ouf (Chouette plugin : textPlugin)
-  - ex de code : ``` .to(text2_1, 1.5, {text:"C'est jusque quel âge ?", ease:Linear.easeNone}, '+=0.5') ```
- - [La demande de Ludo pour Cherry Pulp](https://www.patholudovic.be/cherrypulp/) 
- - [Exemples sur le site de GS](https://greensock.com/examples-showcases)
+ - Exemples
+   - Mes anims de ouf (Chouette plugin : textPlugin)
+     ex de code : ``` .to(text2_1, 1.5, {text:"C'est jusque quel âge ?", ease:Linear.easeNone}, '+=0.5') ```
+   - [La demande de Ludo pour Cherry Pulp](https://www.patholudovic.be/cherrypulp/) 
+   - [Exemples sur le site de GS](https://greensock.com/examples-showcases)
  - Liens :
     - [Tuto video (1h10, gratuit, faut juste s'inscrire, anglais australien)](https://ihatetomatoes.net/g101/)
     - Tuto wiki http://edutechwiki.unige.ch/fr/Tutoriel_GreenSock_GSAP
