@@ -165,7 +165,7 @@ window.onload = function() {
   
   Super utile :  [le visualizer](https://greensock.com/ease-visualizer)
   
-  ```
+ ```
  TweenMax.fromTo(box, 1, {y: -100}, {ease: Elastic. easeOut.config( 1, 0.3), y:100, delay : 0.5});
 
  TweenMax.to(box, 1, {backgroundColor: 'teal', ease:RoughEase.ease.config({template:Power0.easeNone,strength:1,points:20,taper:"none",randomize: true,clamp: false}), delay : 1.5});
