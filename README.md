@@ -59,7 +59,7 @@ Autre méthode
  3: Copiez/Collez ;-)
  ============
  
- Pour démarrer facilement en GSAP, copiez ceci dans un doc html vide : 
+ Petit tuto pour démarrer facilement en GSAP, copiez ceci dans un doc html vide : 
  
  ```
 <!DOCTYPE html>
@@ -74,7 +74,7 @@ Autre méthode
   
  <!-- le plugin text (transforme le texte) n'est pas repris dans TweenMax -->
   
-  <title>GSAP</title>
+  <title>GSAP Tuto</title>
  <style>
  *{
    margin: 0;
@@ -214,3 +214,69 @@ tl = new TimelineLite();
 Attention, ne pas oublier la variable tl = ... et le fait que les ; ne viennent qu'une fois, à la fin (les retirer dans les autre lignes)
 
 Comment gérer les delays dans une tl : fini les ``` ,delay : 1```   => ``` ,'+=1'``` 
+
+***
+
+ Second-last: Exemples et links
+ ============
+ -Mes anims de ouf
+ -La demande de Ludo pour Cherry Pulp
+ -Exemples sur le site de GS
+ -Liens :
+    -Tuto
+    -Doc
+    -Cheatsheet
+ 
+ ***
+ 
+ Last: Do it yourself ;-)
+ ============
+ 
+ Crée un nouveau doc html, reprends la structure suivante, et amuse toi (ou pas, #jemenbatslescouilles) :
+ 
+  ```
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/plugins/TextPlugin.min.js"></script>
+  
+ <!-- le plugin text (transforme le texte) n'est pas repris dans TweenMax -->
+  
+  <title>Ma 1ère anim GSAP</title>
+ <style>
+ *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+
+ </style>
+</head>
+<body>
+// insère ici les éléments à animer (div, textes, images, bg...)
+
+  
+<script>
+
+window.onload = function() {
+// insère ici tes variables, pas oublier la variable timeline si tu l'utilises
+
+
+// insère ici tes tweens ou timeline
+
+
+}
+
+</script>
+</body>
+</html>
+
+ 
+ ```
+ 
