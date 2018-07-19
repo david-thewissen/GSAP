@@ -3,7 +3,10 @@ Workshop : découverte de GSAP (Green Socket Animation Platform)
 =======================
 
 
+
 [Présentation rapide de GSAP](https://greensock.com/ "Présentation rapide de GSAP")
+
+
 
 
 1: Gsap c'est 4 librairies, et des plugins (pas tous gratuits :-(  )
@@ -22,6 +25,8 @@ Pour ce workshop, on utilisera le TweenMax :
   ```
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
   ```
+  
+  
   
 2: Les sélecteurs : JQuery ou Javascript (pour les puristes)
 -----------------
