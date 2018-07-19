@@ -229,7 +229,7 @@ Comment gérer les delays dans une tl : fini les ``` ,delay : 1```   => ``` ,'+=
 
  Second-last: Exemples et links
  ============
- - Mes anims de ouf (Chouette plugin : text
+ - Mes anims de ouf (Chouette plugin : textPlugin)
  - La demande de Ludo pour Cherry Pulp
  - Exemples sur le site de GS
  - Liens :
