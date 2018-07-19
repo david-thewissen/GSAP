@@ -132,7 +132,7 @@ window.onload = function() {
  4: Mon premier tween :-D
  ============
  
- ⋅⋅* Créer le Tween :
+- Créer le Tween :
  ```
    TweenMax.to(img, 1, {x:200});
    
@@ -151,7 +151,7 @@ window.onload = function() {
    TweenMax.to(box, 1, {backgroundColor: 'teal'});
 
  ```
-  ⋅⋅* Add some delay :
+- Add some delay :
   
   ```
   
@@ -161,7 +161,7 @@ window.onload = function() {
     
     
   ```
-  ⋅⋅* Se mettre à l'ease:
+- Se mettre à l'ease:
   
   Super utile :  [le visualizer](https://greensock.com/ease-visualizer)
   
