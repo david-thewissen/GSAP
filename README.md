@@ -2,7 +2,7 @@
 Workshop : découverte de GSAP (Green Socket Animation Platform)
 =======================
 
-[Présentation rapide de GSAP](https://greensock.com/ "Présentation rapide de GSAP")
+[Présentation rapide de GSAP](https://greensock.com/ "Présentation rapide de GSAP"){:target="_blank"}
 
 ***
 
