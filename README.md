@@ -185,7 +185,7 @@ window.onload = function() {
   TweenMax.to(box, 1, {backgroundColor: 'teal', ease:RoughEase.ease.config({template:Power0.easeNone,strength:1,points:20,taper:"none",randomize: true,clamp: false}), delay : 1.5});
   
   ```
-  
+  ***
   
  5: Call-Backs functions
  ============
@@ -193,6 +193,8 @@ window.onload = function() {
  OnStart, OnUpdate et OnComplet
  
  [Testez les events call-backs ici](https://greensock.com/jump-start-js#event-callbacks)
+ 
+ ***
  
  6: L'atout n°1 de GSAP : les Timelines
  ============
