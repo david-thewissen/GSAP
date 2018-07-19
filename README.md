@@ -155,7 +155,9 @@ window.onload = function() {
 
    TweenMax.fromTo(text, 1, {x: 200}, {x:-200});
    
-   TweenMax.to(box, 1, {y : -50});
+   TweenMax.fromTo(box, 1, {y: -100}, {y:100, color:"white"});
+   
+   TweenMax.to(text, 1,{scale:0.2, opacity:0.3});
 
    TweenMax.to(box, 1, {backgroundColor: 'teal'});
    
@@ -166,7 +168,7 @@ window.onload = function() {
   
  ```
   
-   TweenMax.to(box, 1, {y : -50, delay : 1});
+   TweenMax.fromTo(box, 1, {y: -100}, {y:100, color:"white", delay : 0.5});
 
    TweenMax.to(box, 1, {backgroundColor: 'teal', delay : 1.5});
     
@@ -177,7 +179,7 @@ window.onload = function() {
   Super utile :  [le visualizer](https://greensock.com/ease-visualizer)
   
  ```
-  TweenMax.fromTo(box, 1, {y: -100}, {ease: Elastic. easeOut.config( 1, 0.3), y:100, delay : 0.5});
+  TweenMax.fromTo(box, 1, {y: -100}, {ease: Elastic. easeOut.config( 1, 0.3), y:100, color:"white", delay : 0.5});
 
   TweenMax.to(box, 1, {backgroundColor: 'teal', ease:RoughEase.ease.config({template:Power0.easeNone,strength:1,points:20,taper:"none",randomize: true,clamp: false}), delay : 1.5});
   
@@ -205,13 +207,13 @@ window.onload = function() {
 // sans delay, tout se lance en même temps:
 TweenMax.fromTo(img, 1, {x: -200}, {x:200});
 TweenMax.fromTo(text, 1, {x: 200}, {x:-200});
-TweenMax.fromTo(box, 1, {y: -100}, {ease: Elastic. easeOut.config( 1, 0.3), y:100});
+TweenMax.fromTo(box, 1, {y: -100}, {ease: Elastic. easeOut.config( 1, 0.3), y:100, color:"white"});
 TweenMax.to(box, 1, {backgroundColor: 'teal', ease:RoughEase.ease.config({template:Power0.easeNone,strength:1,points:20,taper:"none",randomize: true,clamp: false})});
 
 // on calcule le delay pour que tout se lance à la suite l'un de l'autre
 TweenMax.fromTo(img, 1, {x: -200}, {x:200});
 TweenMax.fromTo(text, 1, {x: 200}, {x:-200, delay:1});
-TweenMax.fromTo(box, 1, {y: -100}, {ease: Elastic. easeOut.config( 1, 0.3), y:100, delay : 2});
+TweenMax.fromTo(box, 1, {y: -100}, {ease: Elastic. easeOut.config( 1, 0.3), y:100, color:"white", delay : 2});
 TweenMax.to(box, 1, {backgroundColor: 'teal', ease:RoughEase.ease.config({template:Power0.easeNone,strength:1,points:20,taper:"none",randomize: true,clamp: false}), delay : 3});
 
 
@@ -222,13 +224,13 @@ tl = new TimelineLite();
   tl
     .fromTo(img, 1, {x: -200}, {x:200})
     .fromTo(text, 1, {x: 200}, {x:-200})
-    .fromTo(box, 1, {y: -100}, {ease: Elastic. easeOut.config( 1, 0.3), y:100})
+    .fromTo(box, 1, {y: -100}, {ease: Elastic. easeOut.config( 1, 0.3), y:100, color:"white"})
     .to(box, 1, {backgroundColor: 'teal', ease:RoughEase.ease.config({template:Power0.easeNone,strength:1,points:20,taper:"none",randomize: true,clamp: false})})
 
     ;
 ```
 
-- Attention, ne pas oublier la variable tl = ... et le fait que les  ";"  ne viennent qu'une fois, à la fin (les retirer dans les autre lignes)
+- Attention, ne pas oublier la variable tl = ... et le fait que les  ";"  ne viennent qu'une fois, à la fin (les retirer dans les autres lignes)
 - Comment gérer les delays dans une tl : fini les ``` ,delay : 1```   => ``` ,'+=1'``` 
 - On peut aussi donner un label à un des éléments de la TL (ex : ```.add('intro') ``` ) et le réutiliser plus loin (ex:``` , 'intro +=0.5' ```)
 
