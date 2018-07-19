@@ -28,8 +28,8 @@ Pour ce workshop, on utilisera le TweenMax :
 2: Les sélecteurs : JQuery ou Javascript (pour les puristes)
 -----------------
 ```
-  <div class="box">Boiteuh</div>
-  <h1>Titreuh</h1>
+  <div class="box">Boite</div>
+  <h1>Titre</h1>
   
 Jquery
   let box = $('.box');
