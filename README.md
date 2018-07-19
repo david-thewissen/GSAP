@@ -273,7 +273,7 @@ Décommentez les buttons et ajouter ceci à la tl :
  8: Exemples et liens
  ============
  - Exemples
-   - Mes anims de ouf (Chouette plugin : textPlugin)
+   - Bannière BeCode (Chouette plugin : textPlugin, pas inclus dans TweenMax)
    
    ex de code : ``` .to(text2_1, 1.5, {text:"C'est jusque quel âge ?", ease:Linear.easeNone}, '+=0.5') ```
    - [La demande de Ludo pour Cherry Pulp (anim du texte)](https://www.patholudovic.be/cherrypulp/) 
