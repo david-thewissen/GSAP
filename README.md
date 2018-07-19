@@ -14,8 +14,8 @@ Workshop : découverte de GSAP (Green Socket Animation Platform)
 3. TimelineMax
 4. TweenMax
 5. Plugins : CSS, Easing, Colors...
-⋅⋅* [Liste des plugins](https://greensock.com/plugins/)
-⋅⋅* [Liste des liens CDN](https://cdnjs.com/libraries/gsap)
+- [Liste des plugins](https://greensock.com/plugins/)
+- [Liste des liens CDN](https://cdnjs.com/libraries/gsap)
 
 Pour ce workshop, on utilisera le TweenMax : 
 
