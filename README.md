@@ -125,7 +125,7 @@ window.onload = function() {
 
  
  ```
-![alt text](https://i.kym-cdn.com/photos/images/original/001/305/802/660.png "Image Ah")
+![alt text](https://i.kym-cdn.com/photos/images/original/001/305/802/660.png "Nommez-moi ah.png plz")
  
 ***
 
