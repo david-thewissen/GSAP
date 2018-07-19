@@ -158,7 +158,7 @@ window.onload = function() {
    
    TweenMax.fromTo(box, 1, {y: -100}, {y:100, color:"white"});
    
-   TweenMax.to(text, 1,{scale:0.2, opacity:0.3});
+   TweenMax.from(text, 1,{scale:0, opacity:0});
 
    TweenMax.to(box, 1, {backgroundColor: 'teal'});
    
