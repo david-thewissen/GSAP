@@ -133,6 +133,7 @@ window.onload = function() {
 
  
  ```
+ Téléchargez cette image, ajoutez la dans le même dossier (ah.png)
 ![alt text](https://i.kym-cdn.com/photos/images/original/001/305/802/660.png "Nommez-moi ah.png plz")
  
 ***
@@ -140,7 +141,7 @@ window.onload = function() {
  4: Mon premier tween :-D
  ============
  
-- Créer le Tween :
+- Créer le Tween (différence entre from, to, fromTo):
  ```
    TweenMax.to(img, 1, {x:200});
    
@@ -163,22 +164,22 @@ window.onload = function() {
  ```
 - Add some delay :
   
-  ```
+ ```
   
-    TweenMax.to(box, 1, {y : -50, delay : 1});
+   TweenMax.to(box, 1, {y : -50, delay : 1});
 
-    TweenMax.to(box, 1, {backgroundColor: 'teal', delay : 1.5});
+   TweenMax.to(box, 1, {backgroundColor: 'teal', delay : 1.5});
     
     
-  ```
+ ```
 - Se mettre à l'ease:
   
   Super utile :  [le visualizer](https://greensock.com/ease-visualizer)
   
  ```
- TweenMax.fromTo(box, 1, {y: -100}, {ease: Elastic. easeOut.config( 1, 0.3), y:100, delay : 0.5});
+  TweenMax.fromTo(box, 1, {y: -100}, {ease: Elastic. easeOut.config( 1, 0.3), y:100, delay : 0.5});
 
- TweenMax.to(box, 1, {backgroundColor: 'teal', ease:RoughEase.ease.config({template:Power0.easeNone,strength:1,points:20,taper:"none",randomize: true,clamp: false}), delay : 1.5});
+  TweenMax.to(box, 1, {backgroundColor: 'teal', ease:RoughEase.ease.config({template:Power0.easeNone,strength:1,points:20,taper:"none",randomize: true,clamp: false}), delay : 1.5});
   
   ```
   
@@ -186,14 +187,16 @@ window.onload = function() {
  5: Call-Backs functions
  ============
  
- OnStart, OnUpdate, OnComplete
+ OnStart, OnUpdate et OnComplet
+ 
+ [Testez les events call-backs ici](https://greensock.com/jump-start-js#event-callbacks)
  
  6: L'atout n°1 de GSAP : les Timelines
  ============
  
  Permet d'animer facilement plusieurs objets.
  
- Quand on met plusieurs Tweens à la suite, si tout ne doit pas être animé en même temps, il faut calculer le delay.
+ Quand on met plusieurs Tweens à la suite, si tout ne doit pas être animé en même temps, il fauhttps://greensock.com/jump-start-js#event-callbacks calculer le delay.
  Grâce aux TL, plus besoin de delay, chaque tween a lieux à la suite de l'autre (on peut facilement ajuster le timing => overlap).
  
  Changer les Tweens successifs en une TL : 
@@ -225,7 +228,7 @@ tl = new TimelineLite();
     ;
 ```
 
-- Attention, ne pas oublier la variable tl = ... et le fait que les ; ne viennent qu'une fois, à la fin (les retirer dans les autre lignes)
+- Attention, ne pas oublier la variable tl = ... et le fait que les  ";"  ne viennent qu'une fois, à la fin (les retirer dans les autre lignes)
 - Comment gérer les delays dans une tl : fini les ``` ,delay : 1```   => ``` ,'+=1'``` 
 - On peut aussi donner un label à un des éléments de la TL (ex : ```.add('intro') ``` ) et le réutiliser plus loin (ex:``` , 'intro +=0.5' ```)
 
@@ -261,19 +264,19 @@ Décommentez les buttons et ajouter ceci à la tl :
 
 ***
 
- Second-last: Exemples et links
+ 8: Exemples et liens
  ============
  - Exemples
    - Mes anims de ouf (Chouette plugin : textPlugin)
-     ex de code : ``` .to(text2_1, 1.5, {text:"C'est jusque quel âge ?", ease:Linear.easeNone}, '+=0.5') ```
-   - [La demande de Ludo pour Cherry Pulp](https://www.patholudovic.be/cherrypulp/) 
+   ex de code : ``` .to(text2_1, 1.5, {text:"C'est jusque quel âge ?", ease:Linear.easeNone}, '+=0.5') ```
+   - [La demande de Ludo pour Cherry Pulp (anim du texte)](https://www.patholudovic.be/cherrypulp/) 
    - [Exemples sur le site de GS](https://greensock.com/examples-showcases)
  - Liens :
     - [Tuto video (1h10, gratuit, faut juste s'inscrire, anglais australien)](https://ihatetomatoes.net/g101/)
-    - Tuto wiki http://edutechwiki.unige.ch/fr/Tutoriel_GreenSock_GSAP
-    - Jump Start officiel https://greensock.com/jump-start-js#control-playback
-    - Getting started with GSAP officiel https://greensock.com/get-started-js
-    - Cheatsheet https://ihatetomatoes.net/wp-content/uploads/2016/07/GreenSock-Cheatsheet-4.pdf
+    - [Tuto wiki fr](hhttp://edutechwiki.unige.ch/fr/Tutoriel_GreenSock_GSAP)
+    - [Jump Start officiel ](https://greensock.com/jump-start-js#control-playback)
+    - [Getting started with GSAP officiel ](https://greensock.com/get-started-js)
+    - [Cheatsheet](https://ihatetomatoes.net/wp-content/uploads/2016/07/GreenSock-Cheatsheet-4.pdf) 
  
  ***
  
@@ -328,3 +331,4 @@ window.onload = function() {
  
  ```
  
+ENJOY
