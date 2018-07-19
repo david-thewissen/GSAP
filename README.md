@@ -191,19 +191,23 @@ window.onload = function() {
  Changer les Tweens successifs en une TL : 
 
 ```
-TweenMax.fromTo(img, 1, {x: -200}, {x:200});
-TweenMax.fromTo(text, 1, {x: 200}, {x:-200, delay:1});
-TweenMax.fromTo(box, 1, {y: -100}, {ease: Elastic. easeOut.config( 1, 0.3), y:100, delay : 2});
-TweenMax.to(box, 1, {backgroundColor: 'teal', ease:RoughEase.ease.config({template:Power0.easeNone,strength:1,points:20,taper:"none",randomize: true,clamp: false}), delay : 3});
-
+// sans delay, tout se lance en même temps:
 TweenMax.fromTo(img, 1, {x: -200}, {x:200});
 TweenMax.fromTo(text, 1, {x: 200}, {x:-200});
 TweenMax.fromTo(box, 1, {y: -100}, {ease: Elastic. easeOut.config( 1, 0.3), y:100});
 TweenMax.to(box, 1, {backgroundColor: 'teal', ease:RoughEase.ease.config({template:Power0.easeNone,strength:1,points:20,taper:"none",randomize: true,clamp: false})});
 
+// on calcule le delay pour que tout se lance à la suite l'un de l'autre
+TweenMax.fromTo(img, 1, {x: -200}, {x:200});
+TweenMax.fromTo(text, 1, {x: 200}, {x:-200, delay:1});
+TweenMax.fromTo(box, 1, {y: -100}, {ease: Elastic. easeOut.config( 1, 0.3), y:100, delay : 2});
+TweenMax.to(box, 1, {backgroundColor: 'teal', ease:RoughEase.ease.config({template:Power0.easeNone,strength:1,points:20,taper:"none",randomize: true,clamp: false}), delay : 3});
 
+
+// pour créer une timeline, créer une variable = new TimelineLite(); (ou max) :
 tl = new TimelineLite();
 
+// ceci équivaut au tweens précédents
   tl
     .fromTo(img, 1, {x: -200}, {x:200})
     .fromTo(text, 1, {x: 200}, {x:-200})
@@ -219,9 +223,13 @@ Comment gérer les delays dans une tl : fini les ``` ,delay : 1```   => ``` ,'+=
 
 ***
 
+
+
+***
+
  Second-last: Exemples et links
  ============
- -Mes anims de ouf
+ -Mes anims de ouf (Chouette plugin : text
  -La demande de Ludo pour Cherry Pulp
  -Exemples sur le site de GS
  -Liens :
