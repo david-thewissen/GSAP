@@ -90,9 +90,10 @@ Autre méthode
  .box{
    width : 250px;
    height : 250px;
-   background-color : teal;
+   background-color : red;
    margin: 100px auto;
  }
+
 
  </style>
 </head>
