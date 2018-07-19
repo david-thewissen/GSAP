@@ -107,7 +107,15 @@ Autre méthode
  <div class="box">
    Box
  </div>
-
+<!-- <button type="button" name="button" class="btn">Bouton</button>
+<button type="button" name="button" class="btn">Bouton</button>
+<button type="button" name="button" class="btn">Bouton</button>
+<button type="button" name="button" class="btn">Bouton</button>
+<button type="button" name="button" class="btn">Bouton</button>
+<button type="button" name="button" class="btn">Bouton</button>
+<button type="button" name="button" class="btn">Bouton</button>
+<button type="button" name="button" class="btn">Bouton</button>
+<button type="button" name="button" class="btn">Bouton</button> -->
   
 <script>
 
@@ -115,7 +123,7 @@ window.onload = function() {
   let img = $('.img');
   let text = $('.text');
   let box = $('.box');
-
+  let btn = $('.btn');
 
 
 }
@@ -217,12 +225,38 @@ tl = new TimelineLite();
     ;
 ```
 
-Attention, ne pas oublier la variable tl = ... et le fait que les ; ne viennent qu'une fois, à la fin (les retirer dans les autre lignes)
-
-Comment gérer les delays dans une tl : fini les ``` ,delay : 1```   => ``` ,'+=1'``` 
+- Attention, ne pas oublier la variable tl = ... et le fait que les ; ne viennent qu'une fois, à la fin (les retirer dans les autre lignes)
+- Comment gérer les delays dans une tl : fini les ``` ,delay : 1```   => ``` ,'+=1'``` 
+- On peut aussi donner un label à un des éléments de la TL (ex : ```.add('intro') ``` ) et le réutiliser plus loin (ex:``` , 'intro +=0.5' ```)
 
 ***
+ 7: Quelques autres fonctionnalités de la TL :
+ ============
+ 
+- Controler la timeline 
+  - Play
+  - Pause
+  - Resume
+  - Reverse
+  - Speed up
+  - Slow down
+  - Seek (label)
+  [Tester ces controles ici](https://greensock.com/jump-start-js#control-playback) 
+ 
+- Stagger
+  - S'utilise aussi avec from, to, fromTo
+  - Permet de créer un cycle (effet boule de neige)
+  
+Décommentez les buttons et ajouter ceci à la tl :
+```
+.staggerTo(btn, 0.5, {opacity:0, y:-100, ease:Back.easeIn}, 0.1)
+```
+- Repeat (avec TweenMax)
+  - -1 = à l'infini
+  https://greensock.com/jump-start-js#repeat
 
+
+- Compatible avec SVG, canvas, adobe animate CC, Action Script 3. Fort répendu.
 
 
 ***
@@ -230,12 +264,15 @@ Comment gérer les delays dans une tl : fini les ``` ,delay : 1```   => ``` ,'+=
  Second-last: Exemples et links
  ============
  - Mes anims de ouf (Chouette plugin : textPlugin)
- - La demande de Ludo pour Cherry Pulp
- - Exemples sur le site de GS
+  - ex de code : ``` .to(text2_1, 1.5, {text:"C'est jusque quel âge ?", ease:Linear.easeNone}, '+=0.5') ```
+ - [La demande de Ludo pour Cherry Pulp](https://www.patholudovic.be/cherrypulp/) 
+ - [Exemples sur le site de GS](https://greensock.com/examples-showcases)
  - Liens :
-    - Tuto
-    - Doc
-    - Cheatsheet
+    - [Tuto video (1h10, gratuit, faut juste s'inscrire, anglais australien)](https://ihatetomatoes.net/g101/)
+    - Tuto wiki http://edutechwiki.unige.ch/fr/Tutoriel_GreenSock_GSAP
+    - Jump Start officiel https://greensock.com/jump-start-js#control-playback
+    - Getting started with GSAP officiel https://greensock.com/get-started-js
+    - Cheatsheet https://ihatetomatoes.net/wp-content/uploads/2016/07/GreenSock-Cheatsheet-4.pdf
  
  ***
  
