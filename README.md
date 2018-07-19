@@ -278,7 +278,7 @@ Décommentez les buttons et ajouter ceci à la tl :
    - [Exemples sur le site de GS](https://greensock.com/examples-showcases)
  - Liens :
     - [Tuto video (1h10, gratuit, faut juste s'inscrire, anglais australien)](https://ihatetomatoes.net/g101/)
-    - [Tuto wiki fr](hhttp://edutechwiki.unige.ch/fr/Tutoriel_GreenSock_GSAP)
+    - [Tuto wiki fr](http://edutechwiki.unige.ch/fr/Tutoriel_GreenSock_GSAP)
     - [Jump Start officiel ](https://greensock.com/jump-start-js#control-playback)
     - [Getting started with GSAP officiel ](https://greensock.com/get-started-js)
     - [Cheatsheet](https://ihatetomatoes.net/wp-content/uploads/2016/07/GreenSock-Cheatsheet-4.pdf) 
@@ -336,4 +336,4 @@ window.onload = function() {
  
  ```
  
-MERCI
+MERCI bisous
