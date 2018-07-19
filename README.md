@@ -199,7 +199,7 @@ window.onload = function() {
  
  Permet d'animer facilement plusieurs objets.
  
- Quand on met plusieurs Tweens à la suite, si tout ne doit pas être animé en même temps, il fauhttps://greensock.com/jump-start-js#event-callbacks calculer le delay.
+ Quand on met plusieurs Tweens à la suite, si tout ne doit pas être animé en même temps, il faut calculer le delay.
  Grâce aux TL, plus besoin de delay, chaque tween a lieux à la suite de l'autre (on peut facilement ajuster le timing => overlap).
  
  Changer les Tweens successifs en une TL : 
@@ -257,10 +257,11 @@ Décommentez les buttons et ajouter ceci à la tl :
 ```
 .staggerTo(btn, 0.5, {opacity:0, y:-100, ease:Back.easeIn}, 0.1)
 ```
-- Repeat (avec TweenMax)
+- Repeat
+  - [Tester le repeat ici](https://greensock.com/jump-start-js#repeat)
+  - Avec TweenMax
   - -1 = à l'infini
-  https://greensock.com/jump-start-js#repeat
-
+  
 
 - Compatible avec SVG, canvas, adobe animate CC, Action Script 3. Fort répendu.
 
@@ -334,4 +335,4 @@ window.onload = function() {
  
  ```
  
-ENJOY
+MERCI
