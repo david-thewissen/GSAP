@@ -149,6 +149,8 @@ window.onload = function() {
    TweenMax.to(box, 1, {y : -50});
 
    TweenMax.to(box, 1, {backgroundColor: 'teal'});
+   
+   // !! pas de - entre 2 mots, on utilise le camelCase (backrgound-color => backgroundColor) !!
 
  ```
 - Add some delay :
