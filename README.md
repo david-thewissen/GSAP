@@ -181,7 +181,7 @@ window.onload = function() {
  6: L'atout n°1 de GSAP : les Timelines
  ============
  
- Permets d'animer facilement plusieurs objets.
+ Permet d'animer facilement plusieurs objets.
  
  Quand on met plusieurs Tweens à la suite, si tout ne doit pas être animé en même temps, il faut calculer le delay.
  Grâce aux TL, plus besoin de delay, chaque tween a lieux à la suite de l'autre (on peut facilement ajuster le timing => overlap).
