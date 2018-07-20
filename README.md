@@ -234,7 +234,7 @@ tl = new TimelineLite();
 ```
 
 - Attention, ne pas oublier la variable tl = ... et le fait que les  ";"  ne viennent qu'une fois, à la fin (les retirer dans les autres lignes)
-- Comment gérer les delays dans une tl : fini les ``` ,delay : 1```   => ``` ,'+=1'``` 
+- Pour gérer les delays dans une tl : fini les ``` ,delay : 1```   => ``` ,'+=1'``` 
 - On peut aussi donner un label à un des éléments de la TL (ex : ```.add('intro') ``` ) et le réutiliser plus loin (ex:``` , 'intro +=0.5' ```)
 
 ***
@@ -249,7 +249,8 @@ tl = new TimelineLite();
   - Speed up
   - Slow down
   - Seek (label)
-  [Tester ces controles ici](https://greensock.com/jump-start-js#control-playback) 
+  
+[Tester ces controles ici](https://greensock.com/jump-start-js#control-playback) 
  
 - Stagger
   - S'utilise aussi avec from, to, fromTo
@@ -276,6 +277,7 @@ Décommentez les buttons et ajouter ceci à la tl :
    - Bannière BeCode (Chouette plugin : textPlugin, pas inclus dans TweenMax)
    
    ex de code : ``` .to(text2_1, 1.5, {text:"C'est jusque quel âge ?", ease:Linear.easeNone}, '+=0.5') ```
+   
    - [La demande de Ludo pour Cherry Pulp (anim du texte)](https://www.patholudovic.be/cherrypulp/) 
    - [Exemples sur le site de GS](https://greensock.com/examples-showcases)
  - Liens :
