@@ -191,7 +191,7 @@ window.onload = function() {
  5: Call-Backs functions
  ============
  
- OnStart, OnUpdate et OnComplet
+ OnStart, OnUpdate et OnComplete
  
  [Testez les events call-backs ici](https://greensock.com/jump-start-js#event-callbacks)
  
