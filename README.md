@@ -29,9 +29,10 @@ Pour ce workshop, on utilisera le TweenMax :
 -----------------
 ```
   <div class="box">Boite</div>
-  <h1>Titre</h1>
   
-Jquery
+  <h2>Titre</h2>
+  
+JQuery
   let box = $('.box');
   let h2 = $('h2');
 
